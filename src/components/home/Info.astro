@@ -1,0 +1,45 @@
+---
+import ButtonContact from "@components/ButtonContact.astro";
+import Pdf from "@components/icons/Pdf.astro";
+import { socialMedia } from "@utils/constans";
+import { Social } from "src/type";
+---
+
+<footer>
+  <a
+    class="curriculum"
+    href="https://drive.google.com/file/d/1VZsKbo8rdnh4ymwOQK1ZLewWj2lyf-cj/view?usp=share_link"
+    target="_blank"
+  >
+    <span>Ver CV</span>
+    <Pdf />
+  </a>
+  {
+    socialMedia
+      .slice(0, 2)
+      .map((social: Social) => <ButtonContact social={social} />)
+  }
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    gap: 1.2rem;
+  }
+  a {
+    color: #fff;
+    flex: 1;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.3rem 1rem;
+    border-radius: 8px;
+    background-color: var(--bg-brand);
+    transition: background-color 0.2s ease-in;
+  }
+  a:hover {
+    background-color: #0b6ab7b9;
+  }
+</style>
