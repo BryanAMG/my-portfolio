@@ -1,0 +1,34 @@
+---
+import HeaderCard from "./HeaderCard.astro";
+import FooterCard from "./FooterCard.astro";
+import { Project } from "src/type";
+
+interface Props {
+  project: Project;
+}
+const { project } = Astro.props;
+---
+
+<article>
+  <HeaderCard {...project} />
+  <div>
+    <p>
+      {project.description}
+    </p>
+    <FooterCard {...project} />
+  </div>
+</article>
+<style>
+  article {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--bg-blur);
+    color: var(--font-color-card);
+  }
+  div {
+    padding-inline: 0.8rem;
+    display: grid;
+    gap: 1rem;
+    padding-block: 0.8rem;
+  }
+</style>
