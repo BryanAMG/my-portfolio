@@ -14,7 +14,16 @@ import Menu from "./icons/Menu.astro";
   </nav>
 </aside>
 
+<script>
+  const linksEls = document.querySelectorAll("nav a[href^='#']");
+  const menuEl = document.getElementById("menu") as HTMLInputElement;
 
+  linksEls.forEach((link) => {
+    link.addEventListener("click", () => {
+      menuEl.checked = false;
+    });
+  });
+</script>
 
 <style>
   aside {
