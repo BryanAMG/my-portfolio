@@ -1,0 +1,26 @@
+---
+import Card from "./Card.astro";
+import { projects } from "@utils/projects";
+---
+
+<section id="projects">
+  <h2>Proyectos</h2>
+  <div>
+    {projects.map((project) => <Card project={project} />)}
+  </div>
+</section>
+
+<style>
+  section {
+    margin-bottom: 3.5rem;
+  }
+  h2 {
+    font-size: var(--font-title);
+    margin-bottom: 1.5rem;
+  }
+  div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 1.7rem;
+  }
+</style>
