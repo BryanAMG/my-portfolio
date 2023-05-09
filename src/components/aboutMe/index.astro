@@ -1,0 +1,33 @@
+---
+import Information from "./Information.astro";
+import Tecnologies from "./Tecnologies.astro";
+---
+
+<section id="about">
+  <h2>Sobre mí</h2>
+  <div>
+    <Information />
+    <Tecnologies />
+  </div>
+</section>
+
+<style>
+  section {
+    margin-bottom: 3.5rem;
+  }
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  @media (max-width: 690px) {
+    div {
+      flex-direction: column;
+    }
+  }
+</style>

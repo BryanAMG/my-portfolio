@@ -1,0 +1,58 @@
+---
+import Comment from "@components/icons/twitter-card/Comment.astro";
+import Heart from "@components/icons/twitter-card/Heart.astro";
+import Retwittear from "@components/icons/twitter-card/Retwittear.astro";
+import Share from "@components/icons/twitter-card/Share.astro";
+---
+
+<footer>
+  <div>
+    <p><b>171</b> Retweets</p>
+    <p><b>5</b> Citados</p>
+    <p><b>171</b> Me gusta</p>
+  </div>
+  <ul>
+    <li>
+      <Comment />
+    </li>
+    <li>
+      <Retwittear />
+    </li>
+    <li>
+      <Heart />
+    </li>
+    <li>
+      <Share />
+    </li>
+  </ul>
+</footer>
+
+<style>
+  footer {
+    font-size: var(--font-text);
+    color: var(--bg-brand-twitter);
+    display: flex;
+    flex-direction: column;
+  }
+  footer div {
+    display: flex;
+    gap: 0.5rem;
+    padding-block: 0.5rem;
+    border-top: 1px solid var(--bg-brand-twitter);
+  }
+  b {
+    color: var(--font-color-primary);
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    color: var(--bg-brand-twitter);
+    border-top: 1px solid var(--bg-brand-twitter);
+    padding-block: 0.5rem;
+  }
+  ul li {
+    list-style: none;
+    width: 20px;
+  }
+</style>

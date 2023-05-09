@@ -1,0 +1,45 @@
+---
+import FooterInformation from "./FooterInformation.astro";
+import HeaderInformation from "./HeaderInformation.astro";
+---
+
+<article class="about-me">
+  <HeaderInformation />
+  <div class="tweet">
+    <p>
+      Ingeniero de sistemas con 1 año y medio de experiencia realizando
+      proyectos tanto personales como en equipo sobre desarrollo web. Al
+      principio solía realizar aplicaciones con Python y Node.js, luego descubrí
+      mi pasión por las tecnologías frontend, tales como React, Next, en donde
+      se resalta mi enfoque creativo y mi habilidad lógica para codificar.
+    </p>
+    <p>
+      Siempre busco aplicar las mejores prácticas, la programación funcional y
+      la simplicidad en mi trabajo. Además, estoy siempre dispuesto a recibir
+      retroalimentación para mejorar continuamente la calidad de mis resultados
+      y crecer como profesional.
+    </p>
+  </div>
+  <FooterInformation />
+</article>
+
+<style>
+  article {
+    flex: 1;
+    background-color: var(--bg-blur);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+  }
+
+  article div {
+    margin-bottom: 0.5rem;
+  }
+  .tweet p {
+    margin-bottom: 0.5rem;
+  }
+  @media (max-width: 690px) {
+    article {
+      max-width: 90%;
+    }
+  }
+</style>
