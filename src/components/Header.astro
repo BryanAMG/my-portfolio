@@ -1,0 +1,39 @@
+---
+import Container from "@components/Container.astro";
+import logo from "@assets/logo.webp";
+import Navbar from "@components/Navbar.astro";
+---
+
+<header>
+  <Container>
+    <div>
+      <figure>
+        <img src={logo} alt="Logo " />
+      </figure>
+      <Navbar />
+    </div>
+  </Container>
+</header>
+
+<style>
+  header {
+    background-color: var(--bg-blur);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  figure {
+    display: flex;
+    align-items: center;
+    padding-block: 0.8rem;
+  }
+  img {
+    width: 40px;
+    height: 40px;
+  }
+</style>

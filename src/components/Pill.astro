@@ -1,0 +1,23 @@
+---
+const { technology } = Astro.props;
+const { icon, color = "#fff", label } = technology;
+const styleColor = `color : ${color}`;
+const Icon = icon;
+---
+
+<li style={styleColor}>
+  <Icon />
+</li>
+
+<style>
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+  }
+  /* span {
+    display: grid;
+    align-items: center;
+  } */
+</style>

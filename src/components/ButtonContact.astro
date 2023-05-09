@@ -1,0 +1,40 @@
+---
+import { Social } from "src/type";
+
+interface Props {
+  social: Social;
+  isCircle?: boolean;
+}
+
+const { social, isCircle = false } = Astro.props;
+const { name, url, icon } = social;
+const Icon = icon;
+const form = isCircle ? "circle" : "square";
+---
+
+<a href={url} target="_blank" title={name} class={form}>
+  <Icon />
+</a>
+
+<style define:vars={{ form }}>
+  a {
+    color: #fff;
+    display: grid;
+    outline: 2px solid var(--bg-brand);
+    width: 40px;
+    aspect-ratio: 1;
+    place-items: center;
+    transition: background-color 0.2s;
+    background-color: var(--bg-blur);
+  }
+  a:hover {
+    background-color: var(--bg-primary);
+  }
+
+  .circle {
+    border-radius: 50%;
+  }
+  .square {
+    border-radius: 8px;
+  }
+</style>
