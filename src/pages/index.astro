@@ -10,3 +10,29 @@ import About from "@components/aboutMe/index.astro";
   <Projects />
   <About />
 </Layout>
+
+<script>
+  const sectionEls = document.querySelectorAll("section[id]");
+  console.log(sectionEls);
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.id;
+        const linkEl = document.querySelector(
+          `nav a[href="#${id}"]`
+        ) as HTMLAnchorElement;
+
+        if (entry.isIntersecting) {
+          document.querySelector("nav a.selected").classList.remove("selected");
+          linkEl.classList.add("selected");
+        }
+      });
+    },
+    {
+      rootMargin: "-30% 0px -70% 0px",
+    }
+  );
+
+  sectionEls.forEach((section) => observer.observe(section));
+</script>
