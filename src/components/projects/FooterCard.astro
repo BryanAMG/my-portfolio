@@ -1,0 +1,19 @@
+---
+import Pill from "@components/Pill.astro";
+import { Language } from "src/type";
+const { languages } = Astro.props;
+---
+
+<footer>
+  <ul>
+    {languages.map((languaje: Language) => <Pill technology={languaje} />)}
+  </ul>
+</footer>
+
+<style>
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+</style>

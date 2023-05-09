@@ -1,0 +1,58 @@
+---
+import GithubBrand from "@components/icons/GithubBrand.astro";
+import Link from "@components/icons/Link.astro";
+
+const { name, image, source_code_link, webpage_link } = Astro.props;
+---
+
+<header>
+  <img src={image} alt="" />
+  <div>
+    <h4>{name}</h4>
+    <div class="links">
+      <a href={webpage_link} title="Ir Pagina Web" target="_blank"><Link /></a>
+      <a href={source_code_link} title="Ir Codigo Fuente" target="_blank"
+        ><GithubBrand /></a
+      >
+    </div>
+  </div>
+</header>
+
+<style>
+  header {
+    display: grid;
+    gap: 0.6rem;
+  }
+  img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: top;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 0.8rem;
+    font-size: var(--font-titleCard);
+  }
+
+  .links {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .links a {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--bg-brand);
+    transition: background-color 0.2s ease;
+  }
+
+  .links a:hover {
+    background-color: var(--bg-primary);
+  }
+</style>
