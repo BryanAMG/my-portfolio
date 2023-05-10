@@ -8,7 +8,7 @@ import {
   Typescript,
   Astro,
   MaterialUI,
-  ThunderCLient,
+  ThunderClient,
   Postman,
   Git,
   Mysql,
@@ -114,7 +114,7 @@ export const technologiesData = {
   thunder: {
     label: 'Thunder Client',
     color: '#e33eed',
-    icon: ThunderCLient
+    icon: ThunderClient
   },
   git: {
     label: 'Git',

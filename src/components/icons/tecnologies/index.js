@@ -8,7 +8,7 @@ import Typescript from './Typescript.astro'
 import Astro from './Astro.astro'
 import MaterialUI from './MaterialUI.astro'
 import Postman from './Postman.astro'
-import ThunderCLient from './ThunderCLient.astro'
+import ThunderClient from './ThunderClient.astro'
 import Git from './Git.astro'
 import Mysql from './Mysql.astro'
 import Mongo from './Mongo.astro'
@@ -31,7 +31,7 @@ export {
   Astro,
   MaterialUI,
   Postman,
-  ThunderCLient,
+  ThunderClient,
   Git,
   Mysql,
   Mongo,
