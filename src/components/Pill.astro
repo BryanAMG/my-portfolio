@@ -6,15 +6,30 @@ const Icon = icon;
 ---
 
 <li style={styleColor}>
-  <Icon />
+  <div>
+    <Icon />
+  </div>
+  <span>{label}</span>
 </li>
 
 <style>
   li {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
+    outline: 1px solid;
+    padding: 0.3rem 0.5rem;
+    gap: 0.5rem;
+    border-radius: 10px;
+  }
+  li div {
+    display: flex;
+    align-items: center;
+    width: 25px;
+  }
+  li span {
+    white-space: nowrap;
   }
   /* span {
     display: grid;
