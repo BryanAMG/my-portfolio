@@ -1,9 +1,29 @@
-<div>
-  <h3>Masonry</h3>
+---
+import Pill from "@components/Pill.astro";
+import { technologiesData } from "@utils/constans";
+
+const arrayTec = Object.values(technologiesData);
+---
+
+<div class="tec">
+  <ul>
+    {arrayTec.map((tec) => <Pill technology={tec} />)}
+  </ul>
 </div>
 
 <style>
-  div {
+  .tec {
     flex: 1;
   }
+  h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  ul {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+  }
 </style>
+
+<script></script>
