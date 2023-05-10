@@ -63,7 +63,7 @@ export const socialMedia = [
 export const technologiesData = {
   react: {
     label: 'React',
-    color: '#149eca',
+    color: '#5fb8d5',
     icon: React
   },
   tailwindcss: {
@@ -78,17 +78,17 @@ export const technologiesData = {
   },
   typescript: {
     label: 'TypeScript',
-    color: '#3178c6',
+    color: '#579de9',
     icon: Typescript
   },
   css: {
     label: 'CSS',
-    color: '#4189e3',
+    color: '#73adf5',
     icon: Css
   },
   html: {
     label: 'HTML',
-    color: '#E44D26',
+    color: '#f37353',
     icon: Html
   },
   node: {
@@ -98,12 +98,12 @@ export const technologiesData = {
   },
   astro: {
     label: 'Astro',
-    color: '#ff5d01',
+    color: '#fb7326',
     icon: Astro
   },
   material: {
     label: 'Material UI',
-    color: '#007FFF',
+    color: '#00adff',
     icon: MaterialUI
   },
   postman: {
@@ -113,52 +113,52 @@ export const technologiesData = {
   },
   thunder: {
     label: 'Thunder Client',
-    color: '#e33eed',
+    color: '#f54cff',
     icon: ThunderClient
   },
   git: {
     label: 'Git',
-    color: '#f04f33',
+    color: '#ff654a',
     icon: Git
   },
   mysql: {
     label: 'Mysql',
-    color: null,
+    color: '#1aafef',
     icon: Mysql
   },
   mongo: {
     label: 'MongoDB',
-    color: '#309e40',
+    color: '#54dd68',
     icon: Mongo
   },
   reactQuery: {
     label: 'React-Query',
-    color: null,
+    color: '#ff667b',
     icon: Query
   },
   next: {
     label: 'Next js',
-    color: null,
+    color: '#f3f3f3',
     icon: Nextjs
   },
   vue: {
     label: 'Vue js',
-    color: null,
+    color: '#4bbd89',
     icon: Vue
   },
   redux: {
     label: 'Redux',
-    color: '#764abc',
+    color: '#b185f7',
     icon: Redux
   },
   python: {
     label: 'Python',
-    color: null,
+    color: '#f2d350',
     icon: Python
   },
   express: {
     label: 'Express',
-    color: '#000',
+    color: '#f3f3f3',
     icon: Express
   },
 }
