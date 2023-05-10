@@ -1,12 +1,23 @@
 ---
-import Pill from "@components/Pill.astro";
 import { Language } from "src/type";
 const { languages } = Astro.props;
 ---
 
 <footer>
   <ul>
-    {languages.map((languaje: Language) => <Pill technology={languaje} />)}
+    {
+      languages.map((languaje: Language) => {
+        const { icon, color = "#fff" } = languaje;
+        const styleColor = `color : ${color}`;
+        const Icon = icon;
+
+        return (
+          <li style={styleColor}>
+            <Icon />
+          </li>
+        );
+      })
+    }
   </ul>
 </footer>
 
@@ -15,5 +26,11 @@ const { languages } = Astro.props;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+  }
+  ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
   }
 </style>
