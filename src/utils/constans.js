@@ -11,14 +11,11 @@ import {
   ThunderClient,
   Postman,
   Git,
-  Mysql,
   Mongo,
-  Query,
   Nextjs,
-  Vue,
-  Redux,
   Python,
-  Express
+  Express,
+  ChakraUI
 } from "@icons/tecnologies/index";
 import { Github, LinkedIn, Twitter } from "@icons/social-media/index";
 
@@ -121,35 +118,15 @@ export const technologiesData = {
     color: '#ff654a',
     icon: Git
   },
-  mysql: {
-    label: 'Mysql',
-    color: '#1aafef',
-    icon: Mysql
-  },
   mongo: {
     label: 'MongoDB',
     color: '#54dd68',
     icon: Mongo
   },
-  reactQuery: {
-    label: 'React-Query',
-    color: '#ff667b',
-    icon: Query
-  },
   next: {
     label: 'Next js',
     color: '#f3f3f3',
     icon: Nextjs
-  },
-  vue: {
-    label: 'Vue js',
-    color: '#4bbd89',
-    icon: Vue
-  },
-  redux: {
-    label: 'Redux',
-    color: '#b185f7',
-    icon: Redux
   },
   python: {
     label: 'Python',
@@ -160,6 +137,11 @@ export const technologiesData = {
     label: 'Express',
     color: '#f3f3f3',
     icon: Express
+  },
+  ChakraUI: {
+    label: 'Chakra UI',
+    color: '#3dc6be',
+    icon: ChakraUI
   },
 }
 
