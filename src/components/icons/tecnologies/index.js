@@ -10,15 +10,12 @@ import MaterialUI from './MaterialUI.astro'
 import Postman from './Postman.astro'
 import ThunderClient from './ThunderClient.astro'
 import Git from './Git.astro'
-import Mysql from './Mysql.astro'
 import Mongo from './Mongo.astro'
-import Query from './Query.astro'
 import Nextjs from './Nextjs.astro'
-import Vue from './Vue.astro'
-import Redux from './Redux.astro'
 import Python from './Python.astro'
 import Django from './Django.astro'
 import Express from './Express.astro'
+import ChakraUI from './ChakraUI.astro'
 
 export {
   React,
@@ -33,13 +30,10 @@ export {
   Postman,
   ThunderClient,
   Git,
-  Mysql,
   Mongo,
-  Query,
   Nextjs,
-  Vue,
-  Redux,
   Python,
   Django,
-  Express
+  Express,
+  ChakraUI
 }
