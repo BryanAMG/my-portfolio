@@ -1,6 +1,7 @@
-import { kingsLeague, youtube, todo, shopping, quiz, password } from "@assets/projects/index";
+import { kingsLeague, youtube, todo, rental, quiz, password } from "@assets/projects/index";
 
 import { technologiesData } from './constans'
+import { Nextjs } from "../components/icons/tecnologies";
 
 const {
   astro,
@@ -13,13 +14,15 @@ const {
   react,
   tailwindcss,
   thunder,
-  typescript
+  typescript,
+  ChakraUI,
+  next
 } = technologiesData
 
 export const projects = [
   {
     name: "Kings League Clone",
-    description: "Aplicación web full stack en donde se presenta los equipos, clasificatoria y estadísticas de una liga de futbol.",
+    description: "Aplicación web fullstack en donde se presenta los equipos, clasificatoria y estadísticas de una liga de futbol.",
     languages: [
       astro,
       tailwindcss,
@@ -44,7 +47,7 @@ export const projects = [
   },
   {
     name: "Todo App",
-    description: "App para listar tareas por filtros e  implementación de dark mode y drang and drop.",
+    description: "App para listar tareas por filtros e implementación de dark mode y drang and drop.",
     languages: [
       react,
       tailwindcss,
@@ -54,15 +57,16 @@ export const projects = [
     webpage_link: "https://todoapp-react-tailwind.netlify.app/"
   },
   {
-    name: "Shopping Cart",
-    description: "Aplicación que simula un e-commerce , listando por categoria y precio y colocando los productos en un carro de compras.",
+    name: "Inmotor",
+    description: "Aplicación de bienes raíces, con filtrado de propiedades, página de detalles por propiedad con carrusel de imágenes.",
     languages: [
+      next,
       react,
-      tailwindcss,
+      ChakraUI,
     ],
-    image: shopping,
-    source_code_link: "https://github.com/bryan220420/shopping-cart",
-    webpage_link: "https://react-tailwind-shopping-cart.netlify.app/"
+    image: rental,
+    source_code_link: "https://github.com/bryan220420/rental-homes",
+    webpage_link: "https://rental-homes-one.vercel.app/"
   },
   {
     name: "Quiz Javascript",
