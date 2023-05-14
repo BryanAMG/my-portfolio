@@ -5,7 +5,7 @@ import Blob from "./Blob.astro";
 
 <figure>
   <Blob />
-  <img src={foto} alt="" />
+  <img src={foto} alt="Foto de perfil" />
 </figure>
 
 <style>
@@ -19,11 +19,16 @@ import Blob from "./Blob.astro";
     margin-block: 2.5rem;
   }
   img {
-    position: relative;
     width: 210px;
     aspect-ratio: 1;
     background-color: var(--bg-brand);
     border-radius: 54% 46% 70% 30% / 47% 69% 31% 53%;
     object-fit: cover;
+    object-position: bottom: ;;
+  }
+  @media (max-width : 690px){
+    figure{
+      margin-bottom: 0;
+    }
   }
 </style>
