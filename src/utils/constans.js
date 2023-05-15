@@ -41,7 +41,7 @@ export const navLinks = [
 export const socialMedia = [
   {
     name: 'Github',
-    url: 'https://github.com/bryan220420',
+    url: 'https://github.com/BryanAMG',
     icon: Github
   },
   {
