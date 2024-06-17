@@ -1,8 +1,4 @@
-import { kingsLeague, youtube, todo, rental, quiz, password } from "@assets/projects/index";
-
 import { technologiesData } from './constans'
-import { Nextjs } from "../components/icons/tecnologies";
-
 const {
   astro,
   css,
@@ -15,83 +11,80 @@ const {
   tailwindcss,
   thunder,
   typescript,
-  ChakraUI,
   next
 } = technologiesData
 
 export const projects = [
   {
     name: "Kings League Clone",
-    description: "Aplicación web fullstack en donde se presenta los equipos, clasificatoria y estadísticas de una liga de futbol.",
+    description: "Clasificaciones de un evento de football de 12 equipos de creadores de contenido",
     languages: [
       astro,
       tailwindcss,
       node,
       postman
     ],
-    image: kingsLeague,
-    source_code_link: "https://github.com/bryan220420/astro-kings-league-tailwind",
+    source_code_link: "https://github.com/BryanAMG/astro-kings-league-tailwind",
     webpage_link: "https://kings-league-clone.netlify.app/"
   },
   {
     name: "Youtube Clone",
-    description: "Esta aplicación consume la API de Youtube para buscar y mostrar una lista de videos populares.",
+    description: "Explora y mira tus videos favoritos. Un mundo de entretenimiento te espera aquí",
     languages: [
       react,
       material,
       thunder,
     ],
-    image: youtube,
-    source_code_link: "https://github.com/bryan220420/youtube-clone",
+    source_code_link: "https://github.com/BryanAMG/youtube-clone",
     webpage_link: "https://youtube-clone-react-material.netlify.app/"
   },
   {
-    name: "Todo App",
-    description: "App para listar tareas por filtros e implementación de dark mode y drang and drop.",
-    languages: [
-      react,
-      tailwindcss,
-    ],
-    image: todo,
-    source_code_link: "https://github.com/bryan220420/todoApp-react-tailwind",
-    webpage_link: "https://todoapp-react-tailwind.netlify.app/"
-  },
-  {
-    name: "Inmotor",
-    description: "Aplicación de bienes raíces, con filtrado de propiedades, página de detalles por propiedad con carrusel de imágenes.",
+    name: "Book Store",
+    description: "Descubre tu próximo libro favorito: una aventura literaria te espera",
     languages: [
       next,
       react,
-      ChakraUI,
+      tailwindcss,
     ],
-    image: rental,
-    source_code_link: "https://github.com/bryan220420/rental-homes",
-    webpage_link: "https://rental-homes-one.vercel.app/"
+    source_code_link: "https://github.com/BryanAMG/book-store",
+    webpage_link: "https://bryan-book-store.vercel.app/"
+  },
+  {
+    name: "Esland Page",
+    description: "Landing page informativa sobre una premiación anual del mundo de los streamers",
+    languages: [
+      astro,
+      react,
+      tailwindcss,
+    ],
+    source_code_link: "https://github.com/BryanAMG/esland_clone",
+    webpage_link: "https://esland-clone-eight.vercel.app/"
   },
   {
     name: "Quiz Javascript",
-    description: "Aplicación web que presenta al usuario una serie de preguntas con 4 alternativas sobre el lenguaje de programación JavaScript.",
+    description: "Pon a prueba tus conocimientos: desafíate con nuestro quiz de JavaScript.",
     languages: [
       react,
       typescript,
       material,
     ],
-    image: quiz,
-    source_code_link: "https://github.com/bryan220420/quiz-javascript",
+    source_code_link: "https://github.com/BryanAMG/quiz-javascript",
     webpage_link: "https://javascript-quiz-zustand.netlify.app/"
   },
   {
-    name: "Passowrd Generator",
-    description: "Permite crear contraseñas seguras y aleatorias seleccionando la longitud y tipos de caracteres que el usuario incluya.",
+    name: "Typing Game",
+    description: "Mejora tu velocidad y precisión en la mecanografia con este reto",
     languages: [
       html,
       css,
       javascript
     ],
-    image: password,
-    source_code_link: "https://github.com/bryan220420/password-generator",
-    webpage_link: "https://passoword-generator.surge.sh/"
+    source_code_link: "https://github.com/BryanAMG/my-typing-page",
+    webpage_link: "https://my-typing-page.vercel.app/"
   },
-
 ];
+
+
+
+
 
