@@ -5,18 +5,17 @@ import { Project } from "src/type";
 
 interface Props {
   project: Project;
+  num: number;
 }
-const { project } = Astro.props;
+const { project, num } = Astro.props;
 ---
 
 <article>
-  <HeaderCard {...project} />
-  <div>
-    <p>
-      {project.description}
-    </p>
-    <FooterCard {...project} />
-  </div>
+  <HeaderCard {...project} num={num} />
+  <p>
+    {project.description}
+  </p>
+  <FooterCard {...project} />
 </article>
 <style>
   article {
@@ -24,11 +23,12 @@ const { project } = Astro.props;
     overflow: hidden;
     background-color: var(--bg-blur);
     color: var(--font-color-card);
+    display: flex;
+    flex-direction: column;
   }
-  div {
+  p {
+    text-wrap: pretty;
     padding-inline: 0.8rem;
-    display: grid;
-    gap: 1rem;
     padding-block: 0.8rem;
   }
 </style>
