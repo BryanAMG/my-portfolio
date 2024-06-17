@@ -1,12 +1,15 @@
 ---
 import GithubBrand from "@components/icons/GithubBrand.astro";
 import Link from "@components/icons/Link.astro";
+import { Project } from "src/type";
 
-const { name, image, source_code_link, webpage_link } = Astro.props;
+const { name, source_code_link, webpage_link, num } = Astro.props;
+const numImage = num.toString().padStart(2, "0");
+const urlImage = `/projects/${numImage}.webp`;
 ---
 
 <header>
-  <img src={image} alt="" />
+  <img src={urlImage} alt=`Captura de pantalla del proyecto ${name}` />
   <div>
     <h3>{name}</h3>
     <div class="links">
@@ -34,6 +37,7 @@ const { name, image, source_code_link, webpage_link } = Astro.props;
     justify-content: space-between;
     align-items: center;
     padding-inline: 0.8rem;
+
     font-size: var(--font-titleCard);
   }
 
